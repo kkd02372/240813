@@ -40,7 +40,7 @@ positive_transitions = {
     '힘이 빠져': '힘이 빠질 때는 잠깐 쉬고, 에너지를 충전하자. 🌱 그래서 나는 정말 럭키{name}야!'
 }
 
-st.title('💬 친구처럼 따뜻한 긍정 챗봇 🌟')
+st.title('💬 럭키유! 🌟')
 
 # 사용자 이름 입력
 name = st.text_input('이름을 입력해 주세요:', '')
@@ -54,7 +54,7 @@ if st.button('위로의 말 전하기! 🥰'):
         response = positive_transitions[user_input].format(name=name)
         st.write(response)
     else:
-        response = '모든 감정은 소중해. 잠시 힘들어도 곧 좋은 일이 찾아올 거야. 너는 혼자가 아니야. 🌈 그래서 나는 정말 럭키+{name}야!'
+        response = '모든 감정은 소중해. 잠시 힘들어도 곧 좋은 일이 찾아올 거야. 너는 혼자가 아니야. 🌈 그래서 나는 정말 럭키{name}야!'
         st.write(response.format(name=name))
 
 # 추가 팁
